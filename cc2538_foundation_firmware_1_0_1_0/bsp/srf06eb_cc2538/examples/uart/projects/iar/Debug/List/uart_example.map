@@ -1,0 +1,471 @@
+###############################################################################
+#
+# IAR ELF Linker V7.20.2.7424/W32 for ARM                 07/Aug/2014  15:20:37
+# Copyright 2007-2014 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\bin\iar\uart_example.out
+#    Map file     =  
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\List\uart_example.map
+#    Command line =  
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\adc.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\bsp.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\bsp_key.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\bsp_led.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\bsp_uart.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\cpu.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\debug.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\flash.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\gpio.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\gptimer.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\i2c.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\interrupt.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\io_pin_int.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\ioc.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\lcd_dogm128_6.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\lcd_dogm128_6_alphabet.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\lcd_srf06eb.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\sleepmode.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\ssi.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\startup_iar.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\sys_ctrl.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\systick.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\uart.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\uart_example.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\udma.o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj\watchdog.o
+#        -o
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\bin\iar\uart_example.out
+#        --map
+#        C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\List\uart_example.map
+#        --config "C:\Program Files\IAR Systems\Embedded Workbench
+#        7.0\arm\config\linker\TexasInstruments\cx2538xf53.icf" --semihosting
+#        --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x00200000 { ro section .intvec };
+"A2":  place at start of [0x0027ffd4-0x0027ffdf] { ro section .flashcca };
+"P1":  place in [from 0x00200000 to 0x0027ffd3] { ro };
+"A3":  place at start of [0x20004000-0x20007fff] { section VTABLE };
+"P2":  place in [from 0x20004000 to 0x20007fff] { rw, block HEAP };
+"A4":  place at end of [0x20004000-0x20007fff] { block CSTACK };
+
+  Section          Kind        Address    Size  Object
+  -------          ----        -------    ----  ------
+"A1":                                    0x100
+  .intvec          const    0x00200000   0x100  startup_iar.o [1]
+                          - 0x00200100   0x100
+
+"P1":                                   0x2b20
+  .text            ro code  0x00200100   0x474  ioc.o [1]
+  .text            ro code  0x00200574     0x2  debug.o [1]
+  .text            ro code  0x00200576    0x22  zero_init3.o [5]
+  .text            ro code  0x00200598   0x460  io_pin_int.o [1]
+  .text            ro code  0x002009f8   0x144  interrupt.o [1]
+  .text            ro code  0x00200b3c   0x404  gpio.o [1]
+  .text            ro code  0x00200f40    0x10  cpu.o [1]
+  .text            ro code  0x00200f50   0x434  bsp_uart.o [1]
+  .text            ro code  0x00201384   0x27c  sys_ctrl.o [1]
+  .text            ro code  0x00201600   0x330  uart.o [1]
+  .text            ro code  0x00201930   0x36e  bsp_key.o [1]
+  .text            ro code  0x00201c9e     0xa  xsprout.o [3]
+  .text            ro code  0x00201ca8   0x24c  bsp.o [1]
+  .text            ro code  0x00201ef4   0x214  ssi.o [1]
+  .rodata          const    0x00202108   0x1d8  lcd_dogm128_6_alphabet.o [1]
+  .text            ro code  0x002022e0   0x150  xprintftiny.o [3]
+  .text            ro code  0x00202430    0x36  strlen.o [5]
+  .text            ro code  0x00202468   0x144  lcd_dogm128_6.o [1]
+  .text            ro code  0x002025ac   0x128  uart_example.o [1]
+  .text            ro code  0x002026d4    0x18  bsp_led.o [1]
+  .text            ro code  0x002026ec    0xd8  lcd_srf06eb.o [1]
+  .text            ro code  0x002027c4    0x34  sprintf.o [3]
+  .rodata          const    0x002027f8    0x54  interrupt.o [1]
+  .rodata          const    0x0020284c    0x54  sys_ctrl.o [1]
+  .rodata          const    0x002028a0    0x50  gpio.o [1]
+  .rodata          const    0x002028f0    0x50  ioc.o [1]
+  .rodata          const    0x00202940    0x50  ssi.o [1]
+  .rodata          const    0x00202990    0x50  uart.o [1]
+  .text            ro code  0x002029e0    0x3e  startup_iar.o [1]
+  .text            ro code  0x00202a1e     0xc  cstartup_M.o [5]
+  .text            ro code  0x00202a2c    0x1a  cmain.o [5]
+  .text            ro code  0x00202a46     0x4  low_level_init.o [3]
+  .text            ro code  0x00202a4c    0x28  data_init.o [5]
+  .text            ro code  0x00202a74     0x4  exit.o [3]
+  .text            ro code  0x00202a78     0xa  cexit.o [5]
+  .text            ro code  0x00202a84    0x14  exit.o [6]
+  .iar.init_table  const    0x00202a98    0x18  - Linker created -
+  .rodata          const    0x00202ab0    0x20  ioc.o [1]
+  .rodata          const    0x00202ad0    0x20  ioc.o [1]
+  .rodata          const    0x00202af0    0x20  ioc.o [1]
+  .rodata          const    0x00202b10    0x20  ioc.o [1]
+  .rodata          const    0x00202b30    0x20  ioc.o [1]
+  .rodata          const    0x00202b50    0x20  ioc.o [1]
+  .rodata          const    0x00202b70    0x20  ioc.o [1]
+  .rodata          const    0x00202b90    0x20  ioc.o [1]
+  .rodata          const    0x00202bb0    0x18  sys_ctrl.o [1]
+  .rodata          const    0x00202bc8    0x14  interrupt.o [1]
+  .rodata          const    0x00202bdc    0x14  lcd_srf06eb.o [1]
+  .rodata          const    0x00202bf0    0x10  uart_example.o [1]
+  .rodata          const    0x00202c00     0xc  uart_example.o [1]
+  .rodata          const    0x00202c0c     0xc  uart_example.o [1]
+  .rodata          const    0x00202c18     0x8  uart_example.o [1]
+  .rodata          const    0x00202c20     0x0  zero_init3.o [5]
+                          - 0x00202c20  0x2b20
+
+"A2":                                      0xc
+  .flashcca        const    0x0027ffd4     0xc  startup_iar.o [1]
+                          - 0x0027ffe0     0xc
+
+"A3":                                    0x100
+  VTABLE           zero     0x20004000   0x100  interrupt.o [1]
+                          - 0x20004100   0x100
+
+"P2":                                    0x590
+  .bss             zero     0x20004100   0x400  lcd_dogm128_6.o [1]
+  .bss             zero     0x20004500    0x80  uart_example.o [1]
+  .bss             zero     0x20004580    0x20  io_pin_int.o [1]
+  .bss             zero     0x200045a0    0x20  io_pin_int.o [1]
+  .bss             zero     0x200045c0    0x20  io_pin_int.o [1]
+  .bss             zero     0x200045e0    0x20  io_pin_int.o [1]
+  .bss             zero     0x20004600    0x14  bsp_key.o [1]
+  .bss             zero     0x20004614    0x14  bsp_uart.o [1]
+  .bss             zero     0x20004628    0x14  bsp_uart.o [1]
+  .bss             zero     0x2000463c    0x10  uart_example.o [1]
+  .bss             zero     0x2000464c    0x10  uart_example.o [1]
+  .bss             zero     0x2000465c    0x10  uart_example.o [1]
+  .bss             zero     0x2000466c     0x4  bsp_key.o [1]
+  .bss             zero     0x20004670     0x4  bsp_key.o [1]
+  .bss             zero     0x20004674     0x4  bsp_key.o [1]
+  .bss             zero     0x20004678     0x4  bsp_uart.o [1]
+  .bss             zero     0x2000467c     0x4  io_pin_int.o [1]
+  .bss             zero     0x20004680     0x4  io_pin_int.o [1]
+  .bss             zero     0x20004684     0x4  io_pin_int.o [1]
+  .bss             zero     0x20004688     0x4  io_pin_int.o [1]
+  .bss             zero     0x2000468c     0x1  bsp.o [1]
+                          - 0x2000468d   0x58d
+
+"A4":                                    0x800
+  CSTACK                    0x20007800   0x800  <Block>
+    .stack         uninit   0x20007800     0x4  startup_iar.o [1]
+    CSTACK         uninit   0x20007804   0x7fc  <Block tail>
+                          - 0x20008000   0x800
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    2 destination ranges, total size 0x68d:
+          0x20004000  0x100
+          0x20004100  0x58d
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                    ro code  ro data  rw data
+    ------                    -------  -------  -------
+C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj: [1]
+    bsp.o                         588                 1
+    bsp_key.o                     878                32
+    bsp_led.o                      24
+    bsp_uart.o                  1 076                44
+    cpu.o                          16
+    debug.o                         2
+    gpio.o                      1 028       80
+    interrupt.o                   324      104      256
+    io_pin_int.o                1 120               144
+    ioc.o                       1 140      336
+    lcd_dogm128_6.o               324             1 024
+    lcd_dogm128_6_alphabet.o               472
+    lcd_srf06eb.o                 216       20
+    ssi.o                         532       80
+    startup_iar.o                  62      268        4
+    sys_ctrl.o                    636      108
+    uart.o                        816       80
+    uart_example.o                296       48      176
+    ---------------------------------------------------
+    Total:                      9 078    1 596    1 681
+
+command line: [2]
+    ---------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                          4
+    low_level_init.o                4
+    sprintf.o                      52
+    xprintftiny.o                 336
+    xsprout.o                      10
+    ---------------------------------------------------
+    Total:                        406
+
+m7M_tl.a: [4]
+    ---------------------------------------------------
+    Total:
+
+rt7M_tl.a: [5]
+    cexit.o                        10
+    cmain.o                        26
+    cstartup_M.o                   12
+    data_init.o                    40
+    strlen.o                       54
+    zero_init3.o                   34
+    ---------------------------------------------------
+    Total:                        176
+
+shb_l.a: [6]
+    exit.o                         20
+    ---------------------------------------------------
+    Total:                         20
+
+    Gaps                            8
+    Linker created                          24    2 044
+-------------------------------------------------------
+    Grand Total:                9 688    1 620    3 725
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+?main                   0x00202a2d         Code  Gb  cmain.o [5]
+ADCIntHandler           0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+AESIntHandler           0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+CPUcpsid                0x00200f41    0x8  Code  Gb  cpu.o [1]
+CPUcpsie                0x00200f49    0x8  Code  Gb  cpu.o [1]
+CSTACK$$Base            0x20007800          --   Gb  - Linker created -
+CSTACK$$Limit           0x20008000          --   Gb  - Linker created -
+CompIntHandler          0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+FaultISR                0x00202a1b    0x2  Code  Lc  startup_iar.o [1]
+FlashIntHandler         0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+GPIOAIntHandler         0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+GPIOBIntHandler         0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+GPIOBaseValid           0x00200b3d   0x2a  Code  Lc  gpio.o [1]
+GPIOCIntHandler         0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+GPIODIntHandler         0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+GPIODirModeSet          0x00200bb5   0x74  Code  Gb  gpio.o [1]
+GPIOGetIntNumber        0x00200b67   0x4e  Code  Gb  gpio.o [1]
+GPIOIntTypeSet          0x00200c29   0x94  Code  Gb  gpio.o [1]
+GPIOPinIntClear         0x00200d49   0x24  Code  Gb  gpio.o [1]
+GPIOPinIntDisable       0x00200ceb   0x2e  Code  Gb  gpio.o [1]
+GPIOPinIntEnable        0x00200cbd   0x2e  Code  Gb  gpio.o [1]
+GPIOPinIntStatus        0x00200d19   0x30  Code  Gb  gpio.o [1]
+GPIOPinRead             0x00200da1   0x24  Code  Gb  gpio.o [1]
+GPIOPinTypeGPIOInput    0x00200ded   0x36  Code  Gb  gpio.o [1]
+GPIOPinTypeGPIOOutput   0x00200e23   0x36  Code  Gb  gpio.o [1]
+GPIOPinTypeSSI          0x00200e59   0x36  Code  Gb  gpio.o [1]
+GPIOPinTypeUARTInput    0x00200e8f   0x4e  Code  Gb  gpio.o [1]
+GPIOPinTypeUARTOutput   0x00200edd   0x4e  Code  Gb  gpio.o [1]
+GPIOPinWrite            0x00200dc5   0x28  Code  Gb  gpio.o [1]
+GPIOPortIntRegister     0x00200d6d   0x34  Code  Gb  gpio.o [1]
+I2CIntHandler           0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+IOCPadConfigSet         0x00200409   0xda  Code  Gb  ioc.o [1]
+IOCPinConfigPeriphInput
+                        0x002001b3  0x256  Code  Gb  ioc.o [1]
+IOCPinConfigPeriphOutput
+                        0x00200101   0xb2  Code  Gb  ioc.o [1]
+IcePickIntHandler       0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+IntAltMapIsEnabled      0x00200b0f   0x10  Code  Gb  interrupt.o [1]
+IntDefaultHandler       0x00202a1d    0x2  Code  Lc  startup_iar.o [1]
+IntEnable               0x00200a95   0x7a  Code  Gb  interrupt.o [1]
+IntMasterDisable        0x00200a0d   0x14  Code  Gb  interrupt.o [1]
+IntMasterEnable         0x002009f9   0x14  Code  Gb  interrupt.o [1]
+IntRegister             0x00200a21   0x74  Code  Gb  interrupt.o [1]
+MacTimerIntHandler      0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+NmiISR                  0x00202a19    0x2  Code  Lc  startup_iar.o [1]
+PKAIntHandler           0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+PendSVIntHandler        0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+RFCoreErrIntHandler     0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+RFCoreTxIntHandler      0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+Region$$Table$$Base     0x00202a98          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00202ab0          --   Gb  - Linker created -
+ResetISR                0x002029e1   0x28  Code  Lc  startup_iar.o [1]
+SSI0IntHandler          0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+SSI1IntHandler          0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+SSIBusy                 0x002020a5   0x24  Code  Gb  ssi.o [1]
+SSIClockSourceSet       0x002020c9   0x34  Code  Gb  ssi.o [1]
+SSIConfigSetExpClk      0x00201ef5   0xfe  Code  Gb  ssi.o [1]
+SSIDataGetNonBlocking   0x00202077   0x2e  Code  Gb  ssi.o [1]
+SSIDataPut              0x00202037   0x40  Code  Gb  ssi.o [1]
+SSIDisable              0x00202015   0x22  Code  Gb  ssi.o [1]
+SSIEnable               0x00201ff3   0x22  Code  Gb  ssi.o [1]
+STACK_TOP {Abs}         0x20008000          --   Gb  command line/config [2]
+SleepModeIntHandler     0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+SysCtrlClockGet         0x00201493   0x58  Code  Gb  sys_ctrl.o [1]
+SysCtrlClockSet         0x002013d5   0xbe  Code  Gb  sys_ctrl.o [1]
+SysCtrlDelay            0x00201589    0x8  Code  Gb  sys_ctrl.o [1]
+SysCtrlIOClockGet       0x00201531   0x58  Code  Gb  sys_ctrl.o [1]
+SysCtrlIOClockSet       0x002014eb   0x46  Code  Gb  sys_ctrl.o [1]
+SysCtrlPeripheralEnable
+                        0x00201591   0x3c  Code  Gb  sys_ctrl.o [1]
+SysCtrlPeripheralValid  0x00201385   0x50  Code  Lc  sys_ctrl.o [1]
+SysTickIntHandler       0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+Timer0AIntHandler       0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+Timer0BIntHandler       0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+Timer1AIntHandler       0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+Timer1BIntHandler       0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+Timer2AIntHandler       0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+Timer2BIntHandler       0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+Timer3AIntHandler       0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+Timer3BIntHandler       0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+UART0IntHandler         0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+UART1IntHandler         0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+UARTBaseValid           0x00201601   0x1a  Code  Lc  uart.o [1]
+UARTCharGetNonBlocking  0x002017df   0x2a  Code  Gb  uart.o [1]
+UARTCharPut             0x00201809   0x26  Code  Gb  uart.o [1]
+UARTCharsAvail          0x0020178b   0x2a  Code  Gb  uart.o [1]
+UARTClockSourceSet      0x002018ef   0x32  Code  Gb  uart.o [1]
+UARTConfigSetExpClk     0x0020167b   0x72  Code  Gb  uart.o [1]
+UARTDisable             0x0020171b   0x34  Code  Gb  uart.o [1]
+UARTEnable              0x002016ed   0x2e  Code  Gb  uart.o [1]
+UARTFIFOLevelSet        0x0020161b   0x60  Code  Gb  uart.o [1]
+UARTIntClear            0x002018d1   0x1e  Code  Gb  uart.o [1]
+UARTIntDisable          0x00201887   0x22  Code  Gb  uart.o [1]
+UARTIntEnable           0x00201865   0x22  Code  Gb  uart.o [1]
+UARTIntRegister         0x0020182f   0x36  Code  Gb  uart.o [1]
+UARTIntStatus           0x002018a9   0x28  Code  Gb  uart.o [1]
+UARTSpaceAvail          0x002017b5   0x2a  Code  Gb  uart.o [1]
+UARTTxIntModeSet        0x0020174f   0x3c  Code  Gb  uart.o [1]
+USBIntHandler           0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+WatchdogIntHandler      0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+_PrintfTiny             0x002022f9  0x138  Code  Gb  xprintftiny.o [3]
+_SProut                 0x00201c9f    0xa  Code  Gb  xsprout.o [3]
+__as_entries_start      0xffffffff          --   Gb  command line/config [2]
+__as_table_start        0xffffffff          --   Gb  command line/config [2]
+__cca                   0x0027ffd4    0xc  Data  Gb  startup_iar.o [1]
+__cmain                 0x00202a2d         Code  Gb  cmain.o [5]
+__error__               0x00200575    0x2  Code  Gb  debug.o [1]
+__exit                  0x00202a85   0x14  Code  Gb  exit.o [6]
+__iar_data_init3        0x00202a4d   0x28  Code  Gb  data_init.o [5]
+__iar_program_start     0x00202a1f         Code  Gb  cstartup_M.o [5]
+__iar_zero_init3        0x00200577   0x22  Code  Gb  zero_init3.o [5]
+__low_level_init        0x00202a47    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00200000  0x100  Data  Gb  startup_iar.o [1]
+_call_main              0x00202a39         Code  Gb  cmain.o [5]
+_exit                   0x00202a79         Code  Gb  cexit.o [5]
+_main                   0x00202a43         Code  Gb  cmain.o [5]
+appUartIsr              0x0020268d   0x16  Code  Lc  uart_example.o [1]
+bsp3V3DomainEnable      0x00201e75   0x18  Code  Gb  bsp.o [1]
+bspAssert               0x00201e8d   0x2e  Code  Gb  bsp.o [1]
+bspInit                 0x00201ca9  0x148  Code  Gb  bsp.o [1]
+bspKeyDirPushedISR      0x00201afd   0x98  Code  Lc  bsp_key.o [1]
+bspKeyInit              0x00201931   0x9a  Code  Gb  bsp_key.o [1]
+bspKeyIntDisabledMask   0x20004670    0x4  Data  Lc  bsp_key.o [1]
+bspKeyIntEnable         0x00201ad9   0x22  Code  Gb  bsp_key.o [1]
+bspKeyPushed            0x002019cb  0x10e  Code  Gb  bsp_key.o [1]
+bspKeySelPushedISR      0x00201b95   0x62  Code  Lc  bsp_key.o [1]
+bspKeyTimerDisable      0x00201c63    0xe  Code  Lc  bsp_key.o [1]
+bspKeyTimerEnable       0x00201c3f   0x24  Code  Lc  bsp_key.o [1]
+bspKeyTimerISR          0x00201bf9   0x46  Code  Lc  bsp_key.o [1]
+bspKeyTimerIntRegister  0x00201c8d   0x12  Code  Lc  bsp_key.o [1]
+bspKeysIsrTable         0x20004600   0x14  Data  Lc  bsp_key.o [1]
+bspKeysPressed          0x2000466c    0x4  Data  Lc  bsp_key.o [1]
+bspLedSet               0x002026d5   0x12  Code  Gb  bsp_led.o [1]
+bspSpiClockSpeedSet     0x00201e4d   0x28  Code  Gb  bsp.o [1]
+bspSpiInit              0x00201df1   0x5c  Code  Gb  bsp.o [1]
+bspUartBufInit          0x00200f51   0x4e  Code  Gb  bsp_uart.o [1]
+bspUartDataGet          0x002010c5   0x70  Code  Gb  bsp_uart.o [1]
+bspUartDataPut          0x00201135  0x10a  Code  Gb  bsp_uart.o [1]
+bspUartIsrHandler       0x0020130d   0x5c  Code  Gb  bsp_uart.o [1]
+bspUartOpen             0x00200f9f  0x126  Code  Gb  bsp_uart.o [1]
+bspUartRxCharsAvail     0x00201265   0x1a  Code  Gb  bsp_uart.o [1]
+bspUartTxSpaceAvail     0x0020123f   0x26  Code  Gb  bsp_uart.o [1]
+buBufFlush              0x002012ed   0x20  Code  Lc  bsp_uart.o [1]
+buBufPopByte            0x0020127f   0x3a  Code  Lc  bsp_uart.o [1]
+buBufPushByte           0x002012b9   0x34  Code  Lc  bsp_uart.o [1]
+dummy_stack             0x20007800    0x4  Data  Lc  startup_iar.o [1]
+exit                    0x00202a75    0x4  Code  Gb  exit.o [3]
+g_pfnRAMVectors         0x20004000  0x100  Data  Lc  interrupt.o [1]
+g_pui32EnRegs           0x00202bc8   0x14  Data  Lc  interrupt.o [1]
+g_pui32IOCPortAOverrideReg
+                        0x00202ab0   0x20  Data  Lc  ioc.o [1]
+g_pui32IOCPortASignSelectReg
+                        0x00202b30   0x20  Data  Lc  ioc.o [1]
+g_pui32IOCPortBOverrideReg
+                        0x00202ad0   0x20  Data  Lc  ioc.o [1]
+g_pui32IOCPortBSignSelectReg
+                        0x00202b50   0x20  Data  Lc  ioc.o [1]
+g_pui32IOCPortCOverrideReg
+                        0x00202af0   0x20  Data  Lc  ioc.o [1]
+g_pui32IOCPortCSignSelectReg
+                        0x00202b70   0x20  Data  Lc  ioc.o [1]
+g_pui32IOCPortDOverrideReg
+                        0x00202b10   0x20  Data  Lc  ioc.o [1]
+g_pui32IOCPortDSignSelectReg
+                        0x00202b90   0x20  Data  Lc  ioc.o [1]
+g_pui32RCGCRegs         0x00202bb0   0x18  Data  Lc  sys_ctrl.o [1]
+i8Bsp3V3DomainEnableCount
+                        0x2000468c    0x1  Data  Lc  bsp.o [1]
+ioPinIntRegister        0x00200599  0x160  Code  Gb  io_pin_int.o [1]
+ioPortAIsr              0x002006f9   0xb2  Code  Lc  io_pin_int.o [1]
+ioPortBIsr              0x002007ad   0xb2  Code  Lc  io_pin_int.o [1]
+ioPortCIsr              0x00200861   0xb2  Code  Lc  io_pin_int.o [1]
+ioPortDIsr              0x00200915   0xb2  Code  Lc  io_pin_int.o [1]
+lcdBufferInvertPage     0x00202469   0x3c  Code  Gb  lcd_dogm128_6.o [1]
+lcdBufferPrintString    0x002024b7   0xa2  Code  Gb  lcd_dogm128_6.o [1]
+lcdBufferPrintStringAligned
+                        0x00202559   0x4c  Code  Gb  lcd_dogm128_6.o [1]
+lcdDefaultBuffer        0x20004100  0x400  Data  Gb  lcd_dogm128_6.o [1]
+lcdGetStringLength      0x002024a5   0x12  Code  Gb  lcd_dogm128_6.o [1]
+lcdInit                 0x002026ed   0x5a  Code  Gb  lcd_srf06eb.o [1]
+lcdInitCmd              0x00202bdc   0x14  Data  Lc  lcd_srf06eb.o [1]
+lcdSendArray            0x00202783   0x34  Code  Lc  lcd_srf06eb.o [1]
+lcdSendCommand          0x00202747   0x3c  Code  Gb  lcd_srf06eb.o [1]
+lcd_alphabet            0x00202108  0x1d8  Data  Gb  lcd_dogm128_6_alphabet.o [1]
+main                    0x002025ad   0xde  Code  Gb  uart_example.o [1]
+out                     0x002022e1   0x18  Code  Lc  xprintftiny.o [3]
+pfnPortAIsr             0x20004580   0x20  Data  Lc  io_pin_int.o [1]
+pfnPortBIsr             0x200045a0   0x20  Data  Lc  io_pin_int.o [1]
+pfnPortCIsr             0x200045c0   0x20  Data  Lc  io_pin_int.o [1]
+pfnPortDIsr             0x200045e0   0x20  Data  Lc  io_pin_int.o [1]
+pui8AppBuf              0x2000465c   0x10  Data  Lc  uart_example.o [1]
+pui8RxBuf               0x2000464c   0x10  Data  Lc  uart_example.o [1]
+pui8TxBuf               0x2000463c   0x10  Data  Lc  uart_example.o [1]
+sBuBufRx                0x20004614   0x14  Data  Lc  bsp_uart.o [1]
+sBuBufTx                0x20004628   0x14  Data  Lc  bsp_uart.o [1]
+sprintf                 0x002027c5   0x34  Code  Gb  sprintf.o [3]
+strlen                  0x00202431         Code  Gb  strlen.o [5]
+uDMAErrIntHandler       0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+uDMAIntHandler          0x00202a1d    0x2  Code  Wk  startup_iar.o [1]
+ui32BuBaudRate          0x20004678    0x4  Data  Lc  bsp_uart.o [1]
+ui8BspKeyMode           0x20004674    0x4  Data  Lc  bsp_key.o [1]
+ui8PortAPinHasIsr       0x2000467c    0x4  Data  Lc  io_pin_int.o [1]
+ui8PortBPinHasIsr       0x20004680    0x4  Data  Lc  io_pin_int.o [1]
+ui8PortCPinHasIsr       0x20004684    0x4  Data  Lc  io_pin_int.o [1]
+ui8PortDPinHasIsr       0x20004688    0x4  Data  Lc  io_pin_int.o [1]
+
+
+[1] = C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\projects\iar\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tl.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  9 688 bytes of readonly  code memory
+  1 620 bytes of readonly  data memory
+  3 725 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

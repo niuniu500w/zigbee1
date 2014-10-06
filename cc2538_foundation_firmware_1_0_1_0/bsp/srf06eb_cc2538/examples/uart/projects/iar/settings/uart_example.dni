@@ -1,0 +1,42 @@
+[xds100]
+xds100serialNo=06EB121007FD
+xds100foundProbes=
+xdsResetStyle=0
+xdsResetStrategy=0
+[DebugChecksum]
+Checksum=1653723811
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[Disassemble mode]
+mode=0
+[Breakpoints]
+Count=0
+[Aliases]
+A0=_ "C:\aaaaPaulZ\Smart Mesh NTWK for LED Lighting\TI\SW Development\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\drivers\source\bsp_key.c" "C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\drivers\source\bsp_key.c"
+A1=_ "C:\aaaaPaulZ\Smart Mesh NTWK for LED Lighting\TI\SW Development\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\drivers\source\bsp_uart.c" "C:\eric\LED\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\drivers\source\bsp_uart.c"
+A2=_ "C:\aaaaPaulZ\Smart Mesh NTWK for LED Lighting\TI\SW Development\cc2538_foundation_firmware_1_0_1_0\bsp\srf06eb_cc2538\examples\uart\source\uart_example.c" ""
+A3=_ "C:\aaaaPaulZ\Smart Mesh NTWK for LED Lighting\TI\SW Development\cc2538_foundation_firmware_1_0_1_0\driverlib\cc2538\source\ssi.c" ""
+Count=4
+SuppressDialog=1
